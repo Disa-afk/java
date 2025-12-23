@@ -1,21 +1,3 @@
-private class Person {
-    private String firstName;
-    private String lastName;
-    public Person(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-    private String getFirstName() {
-        return firstName;
-    }
-    private String getLastName() {
-        return lastName;
-    }
-    private String getFullName(){
-        return firstName + " " + lastName;
-    }
-}
-
 public static void printHydrogenInfo() {
     System.out.println("Hydrogen:");
     System.out.println("This is a chemical element of the periodic system with the designation H and atomic number 1.");
@@ -138,66 +120,6 @@ public static void printSqrt(int[] array) {
     }
 }
 
-public class Solution {
-    public static String city = "Tokyo";
-    public static double population = 34.5;
-
-
-    public static void printCityPopulation(String city, double population) {
-        System.out.println("The population of the city " + city + " is " + population + " million people.");
-        System.out.println("While the most populous city " + getCity() + " has a population of " + getPopulation() + " million people.");
-    }
-
-    public static String getCity() {
-        return city;
-    }
-
-    public static double getPopulation() {
-        return population;
-    }
-}
-
-//Task 2
-//public class Terran {}
-//public  class Human extends Terran {}
-//public class Woman extends Human { }
-
-//Task 3
-public class Vehicle {
-    double maxSpeed;
-}
-public class Car extends Vehicle {
-    int wheelCount;
-    double weight;
-}
-
-public class ElectricCar extends Car {
-    int electricEnginePower;
-}
-
-//Task 4
-public class Entity {
-    public void move(){
-        System.out.println("I'm moving.");
-    }
-    public void eat(){
-        System.out.println("I'm eating.");
-    }
-}
-
-public class Human extends Entity {
-    public void speak(){
-        System.out.println("I can communicate.");
-    }
-}
-
-public class JavaDeveloper extends Human {
-    public void code(){
-        System.out.println("I know how to communicate in Java.");
-    }
-}
-
-
 void main () {
     Scanner scan = new Scanner (System.in);
 
@@ -222,7 +144,7 @@ void main () {
     reverseArray(array);
     printArray(array);
 
-    signIn("user");
+    signIn("Dias");
 
     System.out.println(cube(3));
 
