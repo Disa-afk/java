@@ -1,0 +1,14 @@
+package task07.developers;
+
+public class DotNetDeveloper implements Developer {
+
+    @Override
+    public void study() {
+        writeCode();
+    }
+
+    @Override
+    public void writeCode() {
+        System.out.println("Шлепает формы...");
+    }
+}
